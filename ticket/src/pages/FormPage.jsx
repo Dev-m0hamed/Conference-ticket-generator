@@ -13,7 +13,6 @@ function FormPage() {
 
       <form
         className="container mx-auto mt-8 md:mt-4 flex flex-col justify-center md:w-100"
-        id="ticketForm"
         noValidate
       >
         <fieldset>
