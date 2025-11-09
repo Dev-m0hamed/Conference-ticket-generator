@@ -1,10 +1,9 @@
 import { useDropzone } from "react-dropzone";
-import { useState, useCallback } from "react";
+import { useCallback } from "react";
 import uploadIcon from "../assets/icon-upload.svg";
 
-function Avatar() {
-  const [preview, setPreview] = useState(null);
-  const [error, setError] = useState("");
+function Avatar({preview, setPreview, error, setError}) {
+
   const MAX_SIZE = 500 * 1024;
 
   const onDrop = useCallback((acceptedFiles, rejectedFiles) => {
