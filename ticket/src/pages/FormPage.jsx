@@ -19,8 +19,8 @@ function FormPage() {
       setError("Please upload a valid photo");
       return;
     }
-    console.log(data);
-    navigate("/ticket");
+    const formData = { ...data, avatar: preview };
+    navigate("/ticket", { state: formData });
   };
 
   return (
